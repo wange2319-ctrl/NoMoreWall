@@ -1,0 +1,133 @@
+proxies:
+- name: '@KAFING_2'
+  obfs: salamander
+  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
+  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
+  port: 35000
+  server: 181.214.99.162
+  skip-cert-verify: true
+  sni: api.kermanshahi.org
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+  network: ws
+  port: 2083
+  server: 140.225.208.140
+  servername: speedtestmark.com
+  tls: true
+  type: vless
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  ws-opts:
+    headers:
+      Host: speedtestmark.com
+    path: /vless-ws
+- alpn:
+  - http/1.1
+  client-fingerprint: safari
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
+  network: ws
+  port: 2083
+  server: 140.225.208.60
+  servername: speedtestmark.com
+  tls: true
+  type: vless
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  ws-opts:
+    path: /vless-ws
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
+  network: ws
+  port: 443
+  server: 195.141.65.98
+  servername: 148-253-210-191.sslip.io
+  tls: true
+  type: vless
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  ws-opts:
+    headers:
+      Host: 148-253-210-191.sslip.io
+    path: /test-ws
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
+  network: ws
+  port: 443
+  server: z1q3pv4g78.rucdncomp.pro
+  servername: z1q3pv4g78.rucdncomp.pro
+  tls: true
+  type: vless
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  ws-opts:
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+    path: /useraction/events/b892639b7195/
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
+  port: 465
+  server: hw7.divarkhaghazi.com
+  tls: false
+  type: vless
+  uuid: d0d3d49c-56e8-40e1-9e83-793d03f83d93
+  ws-opts:
+    path: /
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
+  port: 25362
+  server: 193.148.253.194
+  tls: false
+  type: vless
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #4'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.15
+  skip-cert-verify: true
+  sni: courses.iloverussia2026.com
+  type: trojan
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.15
+  type: trojan
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #1'
+  network: ws
+  port: 443
+  server: 199.232.239.239
+  servername: firefox.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 40694ced-9a8c-42fd-f5f8-3ac3c8b27fc2
+  ws-opts:
+    headers:
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+- alpn:
+  - h3
+  client-fingerprint: edge
+  name: '🇩🇪 德国 | DEU #2'
+  network: xhttp
+  port: 443
+  server: 151.101.131.6
+  servername: apps.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: bdf38176-48e9-40f1-9d1c-d501c333b464
+  xhttp-opts:
+    host: kkbr.tm
+    mode: auto
+    path: /crownnet
+- name: DE_speednode_0004
+  port: 443
+  server: 213.109.163.119
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true

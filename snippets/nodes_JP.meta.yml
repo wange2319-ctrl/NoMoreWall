@@ -1,0 +1,170 @@
+proxies:
+- client-fingerprint: chrome
+  name: 🇯🇵[www.v2nodes.com] vless-JP
+  network: ws
+  port: 443
+  server: 188.114.98.0
+  servername: tn1r.eu.cc
+  tls: true
+  type: vless
+  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
+  ws-opts:
+    headers:
+      Host: tn1r.eu.cc
+    path: /id-pusat
+- name: 🇯🇵[www.v2nodes.com] vless-JP-1...
+  port: 443
+  server: 31.76.91.98
+  tls: false
+  type: vless
+  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
+  network: ws
+  port: 443
+  server: 104.18.42.98
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
+  port: 443
+  server: 137.220.221.179
+  tls: false
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  name: 🇯🇵[www.v2nodes.com] vless-JP-7...
+  network: ws
+  port: 443
+  server: bro-per-bro.cc.cd
+  servername: mellow-pine-465b-4e9d050c.pages.dev
+  tls: true
+  type: vless
+  uuid: 4cf798ba-5c0a-40a8-a985-263e4c164f9c
+  ws-opts:
+    headers:
+      Host: mellow-pine-465b-4e9d050c.pages.dev
+    path: /e47f26811455/proxyip=146.190.100.44?u=dailydoseofvpn
+- client-fingerprint: chrome
+  name: 🇯🇵[www.v2nodes.com] vless-JP-4...
+  network: ws
+  port: 443
+  server: kclx.eu.org
+  servername: kclx.eu.org
+  tls: true
+  type: vless
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  ws-opts:
+    headers:
+      Host: kclx.eu.org
+    path: /154.16.10.34-8080
+- name: 🇯🇵[www.v2nodes.com] vless-JP-2...
+  network: ws
+  port: 443
+  server: 141.11.139.215
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chrome
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #5'
+  network: ws
+  port: 443
+  server: 104.21.221.158
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=unsafefp=unsafe
+- cipher: aes-256-gcm
+  name: 🇯🇵[www.v2nodes.com] ss-JP-1599...
+  password: BeaUf9c0AEWH40Pu
+  port: 8388
+  server: 154.36.158.197
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇯🇵[www.v2nodes.com] ss-JP-1544...
+  password: 3eOFeNssde7PYYMv
+  port: 443
+  server: 84.247.155.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵[www.v2nodes.com] ss-JP-5141...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- name: 🇯🇵[www.v2nodes.com] trojan-JP-...
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  sni: 45.32.52.173
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本|@ripaojiedian
+  network: ws
+  port: 443
+  server: Z9FfBx3zs2q5O0BG.v.3dns.vip
+  servername: Z9FfBx3zs2q5O0BG.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Z9FfBx3zs2q5O0BG.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本2|@ripaojiedian
+  network: ws
+  port: 443
+  server: kQov7UKaDknXb8a3.v.3dns.vip
+  servername: kQov7UKaDknXb8a3.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: kQov7UKaDknXb8a3.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本3|@ripaojiedian
+  network: ws
+  port: 443
+  server: kneNaKHeSXnZH259.v.3dns.vip
+  servername: kneNaKHeSXnZH259.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: kneNaKHeSXnZH259.v.3dns.vip
+    path: /ws-vmess
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 10125
+  server: 63182sh8-4d7b.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan

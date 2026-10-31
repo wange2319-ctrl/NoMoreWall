@@ -1,0 +1,64 @@
+name: Sync upstream
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub Actions 使用 UTC；03:23 UTC = 11:23 Asia/Shanghai
+    - cron: '23 3 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repository-auto-update
+  cancel-in-progress: false
+
+env:
+  BRANCH: ${{ github.ref_name }}
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 迁出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 添加上游并抓取
+        run: |
+          git remote add upstream https://github.com/chengaopan/AutoMergePublicNodes.git || git remote set-url upstream https://github.com/chengaopan/AutoMergePublicNodes.git
+          git fetch --depth=1 upstream master
+
+      - name: 同步上游核心文件
+        run: |
+          git checkout upstream/master -- fetch.py dynamic.py fetch_config.yml config.yml abpwhite.txt requirements.txt snippets/example.yml LICENSE.md sources.list
+
+      - name: 保留 Windows UTF-8 编码修复
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("fetch.py")
+          s = p.read_text(encoding="utf-8")
+          old = 'open("list_result.csv",\'w\',errors=\'replace\')'
+          new = 'open("list_result.csv",\'w\',encoding="utf-8",errors=\'replace\')'
+          if old in s:
+              p.write_text(s.replace(old, new, 1), encoding="utf-8", newline="")
+              print("已重新应用 UTF-8 修复")
+          elif new in s:
+              print("UTF-8 修复已存在")
+          else:
+              raise SystemExit("找不到 list_result.csv 编码修复位置，终止同步")
+          PY
+
+      - name: 检查 Python 语法
+        run: python -m py_compile fetch.py dynamic.py quality_filter.py archive_periods.py
+
+      - name: 压缩历史并强制推送
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git checkout --orphan "sync-${GITHUB_RUN_ID}"
+          git add -A
+          git commit -m "sync upstream $(date '+%Y-%m-%d %H:%M:%S')"
+          git push --force origin "HEAD:${BRANCH}"

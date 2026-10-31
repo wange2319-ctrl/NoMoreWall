@@ -1,0 +1,279 @@
+proxies:
+- name: 🇺🇸139909 | ⚡️Telegram = t.me/S...
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: 54.213.89.22
+  skip-cert-verify: true
+  sni: vk.com
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #2'
+  network: ws
+  port: 443
+  server: 146.75.59.186
+  servername: firefox.com
+  tls: true
+  type: vless
+  uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7
+  ws-opts:
+    headers:
+      Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #3'
+  network: ws
+  port: 443
+  server: wwww.qarvian.ir
+  servername: cdn.akamai.steamstatic.com
+  tls: true
+  type: vless
+  uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7
+  ws-opts:
+    headers:
+      Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
+    path: /
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #4'
+  network: ws
+  port: 2053
+  server: fast.145779.xyz
+  servername: fast.145779.xyz
+  tls: true
+  type: vless
+  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
+  ws-opts:
+    headers:
+      Host: fast.145779.xyz
+    path: /ws-tesla
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
+  port: 57259
+  server: 169.128.83.4
+  tls: false
+  type: vless
+  uuid: a1962f23-f8f8-412d-f2ce-3361e7b72889
+- client-fingerprint: chrome
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #9'
+  port: 18580
+  server: us007.zestapp778.com
+  servername: us007.zestapp778.com
+  tls: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+- name: 🇺🇸[www.v2nodes.com] trojan-US-...
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 167.88.61.193
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 170.101.101.53
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #2'
+  password: MiTiVPN
+  port: 443
+  server: 167.82.64.120
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #6'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 169.197.140.169
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #7'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.112.76
+  sni: api.unlockyourfuturefindyourperfectcareer.com
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #8'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 169.197.140.214
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #9'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.122.113
+  sni: api.searchnationwidecareerchangehelperandguidancetoday.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国|@ripaojiedian
+  network: ws
+  port: 443
+  server: 53vXOVarmgcreAsv.v.3dns.vip
+  servername: 53vXOVarmgcreAsv.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: 53vXOVarmgcreAsv.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国2|@ripaojiedian
+  network: ws
+  port: 443
+  server: bJ1Aa2ZyJxYamYuK.v.3dns.vip
+  servername: bJ1Aa2ZyJxYamYuK.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: bJ1Aa2ZyJxYamYuK.v.3dns.vip
+    path: /ws-vmess
+- name: 美国|@ripaojiedian
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 10155
+  server: 63182sh8-4d7b.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- name: 美国2|@ripaojiedian
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12122
+  server: 63182sh8-4d7b.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- client-fingerprint: chrome
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  network: ws
+  port: 443
+  server: 185.229.9.135
+  servername: business.lesotorg-kirov.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f763a7f-4cda-4db1-90e3-9aeae0860dc0
+  ws-opts:
+    headers:
+      Host: business.lesotorg-kirov.ru
+    path: /chws
+- auth: 41edb44c8e
+  name: '🇷🇺 俄罗斯 | RUS #2'
+  password: 41edb44c8e
+  port: 11592
+  server: 103.88.243.142
+  skip-cert-verify: true
+  sni: srv-17e124.21freedom.net
+  tls: false
+  type: hysteria2
+- client-fingerprint: unsafe
+  name: '🇺🇸 美国 | USA #2'
+  network: ws
+  port: 443
+  server: 8.47.69.60
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #4'
+  network: ws
+  port: 443
+  server: 172.66.154.57
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+- name: 🇺🇸 美国 | USA 5
+  network: ws
+  password: humanity
+  port: 443
+  server: 179.255.136.143
+  skip-cert-verify: true
+  sni: www.cordweave.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.cordweave.com
+    path: /assignment
+- alpn:
+  - h3
+  auth: 69e41e64-a832-471a-b740-94577ca85520
+  down: 200
+  name: 🇺🇸 美国 | USA 7
+  password: 69e41e64-a832-471a-b740-94577ca85520
+  port: 443
+  server: 217.60.73.56
+  skip-cert-verify: true
+  sni: forshynewh.duckdns.org
+  type: hysteria2
+  udp: true
+  up: 100
+- name: '🇺🇸 美国 | USA #5'
+  password: humanity
+  port: 443
+  server: 179.255.136.143
+  skip-cert-verify: true
+  sni: www.cordweave.com
+  type: trojan
+- name: '🇺🇸 美国 | USA #7'
+  password: 69e41e64-a832-471a-b740-94577ca85520
+  port: 443
+  server: 217.60.73.56
+  skip-cert-verify: true
+  sni: forshynewh.duckdns.org
+  tls: false
+  type: hysteria2
+- name: US_speednode_0039
+  port: 8443
+  server: 44.248.167.117
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0040
+  port: 443
+  server: 38.247.141.135
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0041
+  port: 443
+  server: 64.98.50.100
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: US_speednode_0042
+  port: 19167
+  server: mx001.zestapp778.com
+  servername: mx001.zestapp778.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+- client-fingerprint: firefox
+  name: US_speednode_0043
+  port: 54857
+  server: 130.94.18.208
+  servername: us001.zestapp778.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
