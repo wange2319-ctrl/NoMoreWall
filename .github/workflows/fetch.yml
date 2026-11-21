@@ -1,0 +1,93 @@
+name: Fetch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */3 * * *'
+  push:
+    paths:
+      - 'sources.list'
+      - 'config.yml'
+      - 'abpwhite.txt'
+      - '.github/workflows/**'
+      - '**.py'
+      - 'snippets/_*'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repository-auto-update
+  cancel-in-progress: false
+
+env:
+  BRANCH: ${{ github.ref_name }}
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 迁出代码
+        uses: actions/checkout@v4
+
+      - name: 设置时区
+        run: sudo timedatectl set-timezone 'Asia/Shanghai'
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 轮换订阅期
+        run: python ./archive_periods.py rotate
+
+      - name: 执行抓取
+        run: python ./fetch.py
+
+      - name: 纯净度与可用度排序
+        run: python ./quality_filter.py
+
+      - name: 固定最新两期快照
+        run: python ./archive_periods.py snapshot
+
+      - name: 压缩历史并强制推送
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git checkout --orphan "snapshot-${GITHUB_RUN_ID}"
+          git add -A
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 两期订阅快照"
+          git push --force origin "HEAD:${BRANCH}"
+
+      - name: 计算要清除缓存的文件
+        if: always()
+        id: purge_urls
+        run: |
+          sleep 5
+          baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@${{ github.ref_name }}"
+          urls=""
+          for f in `find snippets -name "*.yml" -type f`; do
+            urls+="${baseUrl}/${f},"
+          done
+          for f in `find . -name "list*" -type f -maxdepth 1`; do
+            urls+="${baseUrl}/${f},"
+          done
+          echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
+
+      - name: 清除 JsDelivr CDN 缓存
+        if: always()
+        continue-on-error: true
+        run: |
+          json='{"path":['
+          sep=''
+          IFS=',' read -ra urls <<< "${{ steps.purge_urls.outputs.urls }}"
+          for u in "${urls[@]}"; do
+            json+="$sep\"$u\""
+            sep=','
+          done
+          json+=']}'
+          curl -sf --max-time 30 -X POST "https://purge.jsdelivr.net/" -H "Content-Type: application/json" -d "$json" || echo "清除失败（可忽略，jsDelivr 12 小时内会自动刷新）"

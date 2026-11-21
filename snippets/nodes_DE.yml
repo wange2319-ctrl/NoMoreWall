@@ -1,0 +1,8 @@
+proxies:
+- name: 🇩🇪[www.v2nodes.com] trojan-DE-...
+  password: poimnap
+  port: 443
+  server: alireza.karamoz1.ir
+  skip-cert-verify: true
+  sni: alireza.karamoz1.ir
+  type: trojan

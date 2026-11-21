@@ -1,0 +1,116 @@
+proxies:
+- name: 🇸🇬214601 | ⚡️Telegram = t.me/v...
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 443
+  server: 18.143.176.12
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  name: 🇸🇬[www.v2nodes.com] vless-SG
+  network: ws
+  port: 443
+  server: 27.50.48.6
+  servername: vless2-8vx.pages.dev
+  tls: true
+  type: vless
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  ws-opts:
+    headers:
+      Host: vless2-8vx.pages.dev
+    path: /fp=chrome
+- name: 🇨🇦[www.v2nodes.com] vless-CA
+  network: ws
+  port: 8080
+  server: www.gov.se
+  servername: www.gov.se
+  tls: false
+  type: vless
+  uuid: 989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf
+  ws-opts:
+    headers:
+      Host: sdf23g-billowing-moon-348e.mzm468gc.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 🇸🇬[www.v2nodes.com] vless-SG-1...
+  port: 8443
+  server: 207.148.124.12
+  servername: www.bing.com
+  tls: true
+  type: vless
+  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
+- client-fingerprint: chrome
+  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
+  network: ws
+  port: 2096
+  server: 139.162.27.96
+  servername: free-server.techsonic.dev
+  tls: true
+  type: vless
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇸🇬[www.v2nodes.com] ss-SG-1623...
+  password: c11JMfCMQ3Y4aGlhMX5LrMpM13uvw+UVbjGfHP+eKkY=
+  port: 56927
+  server: 168.138.177.98
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇸🇬[www.v2nodes.com] ss-SG-1616...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 51.79.228.131
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇸🇬[www.v2nodes.com] ss-SG-1616... #1'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 15.235.182.183
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇸🇬[www.v2nodes.com] ss-SG-1615...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 15.235.164.133
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇸🇬[www.v2nodes.com] ss-SG-1615... #1'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 149.88.106.74
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇸🇬[www.v2nodes.com] ss-SG-1615... #2'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 149.88.107.74
+  type: ss
+- name: 🇸🇬[www.v2nodes.com] trojan-SG-...
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 15.235.184.127
+  skip-cert-verify: false
+  sni: exploredigitaljobplatformandfindonlinework.com
+  type: trojan
+- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2
+  name: '🇸🇬 新加坡 | SGP #1'
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 443
+  server: 13.212.60.244
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬 新加坡 | SGP #2'
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 8443
+  server: 13.212.60.244
+  type: ss
+  udp: true
