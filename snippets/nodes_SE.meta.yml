@@ -1,0 +1,25 @@
+proxies:
+- client-fingerprint: chrome
+  name: 🇸🇪[www.v2nodes.com] vless-SE-1...
+  network: ws
+  port: 2053
+  server: ws.dhafhdtjdti.site
+  servername: ws.dhafhdtjdti.site
+  tls: true
+  type: vless
+  uuid: 9f749472-c636-4c5a-af51-7f8feefaac81
+  ws-opts:
+    headers:
+      Host: ws.dhafhdtjdti.site
+    path: /
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
+  network: grpc
+  port: 48115
+  server: 138.124.86.230
+  servername: 138-124-86-230.sslip.io
+  tls: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b

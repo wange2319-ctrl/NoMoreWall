@@ -1,0 +1,142 @@
+proxies:
+- name: 🇩🇪232898 | ⚡️Telegram = t.me/L...
+  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
+  port: 443
+  server: 144.31.148.87
+  skip-cert-verify: true
+  sni: replay.wwwinternetvideo.click
+  tls: false
+  type: hysteria2
+- name: 🇩🇪232897 | ⚡️Telegram = t.me/L...
+  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
+  port: 443
+  server: replay.wwwinternetvideo.click
+  skip-cert-verify: true
+  sni: replay.wwwinternetvideo.click
+  tls: false
+  type: hysteria2
+- name: 🇩🇪232896 | ⚡️Telegram = t.me/L...
+  password: 2vwMMy8t5Sjl5lfK9dNF1OrU9d0K25V2RNWLbTKwJ6o
+  port: 443
+  server: 89.125.156.80
+  skip-cert-verify: true
+  sni: pixelcast.wwwinternetvideo.click
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+  port: 443
+  server: free-server.techsonic.dev
+  servername: aka.ms
+  tls: true
+  type: vless
+  uuid: 9afdc92d-4e88-4787-8d75-c95f7685d294
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de5.v1
+  name: 🇩🇪 德国 | DEU 4
+  network: grpc
+  port: 443
+  server: cobblestone.merlano.monster
+  servername: cobblestone.merlano.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '🇩🇪[www.v2nodes.com] ss-DE-1624... #1'
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 47.254.167.157
+  type: ss
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1608...
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 8.211.56.98
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1592...
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  port: 8388
+  server: 57.129.113.16
+  type: ss
+- name: 🏳[www.v2nodes.com] trojan-
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.78
+  type: trojan
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #2'
+  network: xhttp
+  port: 443
+  server: sunfield.moltex.click
+  servername: fennel.moltex.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  xhttp-opts:
+    host: sunfield.moltex.click
+    mode: auto
+    path: /api/de1/sync
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #3'
+  network: xhttp
+  port: 443
+  server: prairie.moltex.click
+  servername: alderpond.moltex.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  xhttp-opts:
+    host: prairie.moltex.click
+    mode: auto
+    path: /api/de2/sync
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #5'
+  network: ws
+  port: 443
+  server: woodgrain.filnex.baby
+  servername: larchbank.elvano.website
+  tls: true
+  type: vless
+  udp: true
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  ws-opts:
+    headers:
+      Host: woodgrain.filnex.baby
+    path: /api/de2/stream
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #4'
+  network: grpc
+  port: 443
+  server: cobblestone.merlano.monster
+  servername: cobblestone.merlano.monster
+  tls: true
+  type: vless
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+- name: DE_speednode_0003
+  password: None
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true

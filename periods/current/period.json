@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-11-28T23:27:46+08:00",
+  "retention": "current_and_previous_only",
+  "files": {
+    "list.best.meta.yml": {
+      "size": 434817,
+      "sha256": "40097b85bae1492175af4de5771382b0532e338d226606059e99db67af8d6e3d"
+    },
+    "list.best.yml": {
+      "size": 413752,
+      "sha256": "febebc472e6fea9ac71a59da25cdb4d403348ac0af655d2e080fcd942c623487"
+    },
+    "list.best.txt": {
+      "size": 18376,
+      "sha256": "3f93482c6ce074efe52ac73d8b0233185706b3ff6b47b524611916be885a4aee"
+    },
+    "list.meta.yml": {
+      "size": 477309,
+      "sha256": "d523cc31b85d12275e155cf15eb21d297d568311b2ebb30c8436754025e3b99e"
+    },
+    "list.yml": {
+      "size": 423686,
+      "sha256": "0731d70dfff00117ec79307729c4552e8acc14df0e097d84147e9ab097545797"
+    },
+    "list.txt": {
+      "size": 76968,
+      "sha256": "27a1b935ae5544d5f4195556b648fde79ed1ab978c813168f658399082df2e22"
+    },
+    "list_raw.txt": {
+      "size": 57726,
+      "sha256": "57e4b0ae169e4723128b40935b586bdd864457e7f2b238b35b96988b5728ce7d"
+    },
+    "list_result.csv": {
+      "size": 1203,
+      "sha256": "3f4955fbc35c821e128cd7591c827d4966cb6894fc03918681f65839d8934a00"
+    },
+    "list_best_report.csv": {
+      "size": 16390,
+      "sha256": "d9323ca2ae9371452833e91a6f6c0f2de48a66cad42f108f7f8118f282f31c03"
+    },
+    "nodes.best.meta.yml": {
+      "size": 20239,
+      "sha256": "6d65acce38d437f41b0326e6ce440595adb7908fba7acefd4d9eab5220939dc8"
+    },
+    "nodes.best.yml": {
+      "size": 6933,
+      "sha256": "6cb15312de52d732f333abbe79340e5d5ba974becf5e30178fb4bf8d5153318f"
+    }
+  }
+}
